@@ -101,6 +101,9 @@
             "drupal/component_blocks": {
                 "3210538 - Not working with Settings Type url and token ": "https://git.drupalcode.org/project/component_blocks/-/merge_requests/2.patch"
             },
+            "drupal/gin_toolbar": {
+                "Add option for node local tasks in toolbar.": "https://www.drupal.org/files/issues/2023-10-19/3121440_local-tasks_48.patch"
+            },
             "drupal/core": {
                 "Break long text strings in layout edit": "https://www.drupal.org/files/issues/2020-12-22/3016507-50.patch",
                 "Improve StringItem::generateSampleValue()": "https://www.drupal.org/files/issues/2020-06-24/3091478-15.patch",
