@@ -11,7 +11,7 @@
  * @param array[] $plugins
  *   Link attribute plugin definitions.
  */
-function wingsuit_link_attributes_plugin_alter(array &$plugins): void {
+function wingsuit_link_attributes_plugin_alter(array &$plugins) {
   // Set a default value for the target attribute.
   $plugins['variant'] = [
     'title' => 'Variant',

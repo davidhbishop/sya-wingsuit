@@ -2,17 +2,13 @@
 
 /**
  * @file
- * Functions to support theming blocks in the Wing suit theme.
+ * Functions to support theming blocks in the Wingsuit theme.
  */
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
- *
- * Theme block suggestion.
- * @param array $suggestions an array of theme suggestions
- * @param array $variables the set of variables
  */
-function wingsuit_theme_suggestions_block_alter(array &$suggestions, array $variables): void {
+function wingsuit_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   // Provide suggestion for block templates by custom block type.
   if (!empty($variables['elements']['content']['#block_content'])) {
     $block = $variables['elements']['content']['#block_content'];
