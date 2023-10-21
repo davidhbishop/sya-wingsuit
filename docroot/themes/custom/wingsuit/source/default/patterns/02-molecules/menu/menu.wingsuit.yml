@@ -1,0 +1,85 @@
+menu:
+  use: "@molecules/menu/menu.twig"
+  label: Menu
+  description: Primary and footer menu component.
+  fields:
+    items:
+      type: object
+      label: Items
+  variants:
+    primary:
+      label: Primary
+      fields:
+        items:
+          1:
+            title: About
+            url: "#"
+            in_active_trail: true
+          2:
+            title: Clubs
+            url: "#"
+            below:
+              10:
+                title: SYA Clubs
+                url: '#'
+              11:
+                title: Groups
+                url: '#'
+              12:
+                title: Activities
+                url: '#'
+              13:
+                title: Volunteer
+                url: '#'
+          3:
+            title: Support
+            url: "#"
+            below:
+              20:
+                title: Guides
+                url: '#'
+              21:
+                title: Packages
+                url: '#'
+              22:
+                title: Training
+                url: '#'
+              23:
+                title: Accreditation
+                url: '#'
+          4:
+            title: Contact
+            url: "#"
+    footer:
+      label: Footer
+      description: The footer menu.
+      fields:
+        items:
+          - title: Column 1
+            url: "#"
+            below:
+              10:
+                title: Link 1
+                url: '#'
+              11:
+                title: Link 2
+                url: '#'
+          - title: Column 2
+            url: "#"
+            below:
+              10:
+                title: Link 3
+                url: '#'
+              11:
+                title: Link 4
+                url: '#'
+          - title: Column 3
+            url: "#"
+            below:
+              10:
+                title: Link 5
+                url: '#'
+              11:
+                title: Link 6
+                url: '#'
+  visibility: storybook
