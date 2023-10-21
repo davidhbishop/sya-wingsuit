@@ -8,7 +8,7 @@
 /**
  * Implements hook_preprocess().
  */
-function wingsuit_preprocess(&$variables) {
+function wingsuit_preprocess(&$variables): void {
   if (wingsuit_is_layout_builder()) {
     $variables['is_layout_builder'] = TRUE;
   }
