@@ -38,7 +38,8 @@ container:
         teal-medium: Teal/#008b97
         orange: Orange/#ff8d1b
         gray-light: Light gray/#d1d5db
-        hexagon: Hexagon
+        hexagon-grey: Hexagon Grey
+        hexagon-orange: Hexagon Orange
     bg_image:
       type: media_library
       label: Background image
@@ -64,4 +65,5 @@ container:
       teal-medium: 'dark bg-teal-500'
       gray-light: 'bg-gray-300'
       orange: 'bg-orange-500'
-      hexagon: 'bg-hexagon'
+      hexagon-grey: 'bg-hexagon-grey'
+      hexagon-orange: 'bg-hexagon-orange'

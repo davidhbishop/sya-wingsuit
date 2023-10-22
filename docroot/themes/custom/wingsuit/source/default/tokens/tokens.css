@@ -30,6 +30,13 @@ img {
   font-family: Caveat;
 }
 
-.bg-hexagon {
-
+.bg-hexagon-grey {
+  background-image: url( '/themes/custom/wingsuit/dist/app-drupal/images/bg-hexagon-grey.svg');
+  background-repeat: repeat;
+  background-size: 100px;
+}
+.bg-hexagon-orange {
+  background-image: url( '/themes/custom/wingsuit/dist/app-drupal/images/bg-hexagon-orange.svg');
+  background-repeat: repeat;
+  background-size: 200px;
 }
