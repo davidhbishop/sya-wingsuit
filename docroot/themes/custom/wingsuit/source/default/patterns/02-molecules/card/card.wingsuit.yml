@@ -33,13 +33,13 @@ card:
       label: Image
       type: media_library
       description: The image tag.
-      view_mode: 16x9
+      view_mode: 1x1
       allow_expose: true
       preview:
         id: placeholder
         variant: image
         settings:
-          style: responsive_16_9_600w
+          style: responsive_1_1_400w
     alignment:
       type: select
       label: Alignment

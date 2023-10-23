@@ -1,0 +1,21 @@
+{% set menu_level = 0 %}
+
+{% import _self as menus %}
+
+{% set list_classes = ([
+  'lg:flex lg:space-x-7 lg:items-center xl:space-x-11 2xl:space-x-15'
+] | sort | join(' ') | trim ) %}
+
+<ul class="{{ list_classes }}">
+  {% for item in items %}
+    {% set link_classes = ([
+      'w-full block cursor-pointer lg:inline-block',
+    ] | sort | join(' ') | trim ) %}
+    <li>
+        <a href="{{ item.url }}" class="{{ link_classes }}">
+          {{ item.title }}
+        </a>
+    </li>
+  {% endfor %}
+</ul>
+

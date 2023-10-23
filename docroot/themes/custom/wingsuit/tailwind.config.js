@@ -76,6 +76,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Poppins', 'Arial'],
+      serif: ['Caveat'],
     },
   },
   plugins: [forms, typography],

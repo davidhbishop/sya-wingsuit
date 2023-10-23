@@ -1,7 +1,7 @@
 menu:
   use: "@molecules/menu/menu.twig"
   label: Menu
-  description: Primary and footer menu component.
+  description: Primary, footer and breadcrumb menu component.
   fields:
     items:
       type: object
@@ -82,4 +82,14 @@ menu:
               11:
                 title: Link 6
                 url: '#'
+    breadcrumb:
+      label: Breadcrumb
+      fields:
+        items:
+          14:
+            title: Home
+            url: "#"
+          15:
+            title: About
+            url: "#"
   visibility: storybook
