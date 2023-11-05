@@ -1,0 +1,8 @@
+uuid: e82a8bf1-ed3e-4177-aff7-59543acec645
+langcode: en
+status: true
+dependencies: {  }
+name: Affiliation
+vid: affiliation
+description: 'Level of association to SYA'
+weight: 0

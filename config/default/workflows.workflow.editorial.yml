@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.club
     - node.type.landing_page
+    - node.type.location
+    - node.type.organisation
     - node.type.page
   module:
     - content_moderation
@@ -75,5 +78,8 @@ type_settings:
   entity_types:
     node:
       - article
+      - club
       - landing_page
+      - location
+      - organisation
       - page

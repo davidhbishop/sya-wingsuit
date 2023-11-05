@@ -1,0 +1,11 @@
+uuid: 57c1aa8e-c345-4524-b206-0ed30b7b9d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.youth_group_category
+id: taxonomy_term.youth_group_category
+target_entity_type_id: taxonomy_term
+target_bundle: youth_group_category
+default_langcode: site_default
+language_alterable: false

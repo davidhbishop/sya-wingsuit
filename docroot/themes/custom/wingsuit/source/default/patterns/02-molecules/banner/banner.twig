@@ -50,14 +50,19 @@ set height_classes = [
 <div{{ attributes|default(create_attribute()).addClass('relative') }}>
   <div{{ create_attribute().addClass(height_classes).addClass(image_position_classes[image_position]) }}>{{ image }}</div>
   <div class="absolute top-0 left-0 w-full h-full flex">
-    {% embed "@organisms/container/container.twig" with {region_attributes: region_attributes, teaser: teaser, headline: headline, classes: 'flex-1 flex ' ~ position_classes[position]}  only %}
+    {% embed "@organisms/container/container.twig" with {region_attributes: region_attributes, teaser: teaser, headline: headline, button: button, classes: 'flex-1 flex ' ~ position_classes[position]}  only %}
       {% block content %}
-        <div class="p-6 dark:text-white">
-          {% if teaser is not empty %}
-            <div{{ region_attributes.teaser|default(create_attribute()).addClass('bg-white p-4') }}>
-              {{ teaser }}
-            </div>
-          {% endif %}
+        <div class="grid grid-cols-1 gap-4">
+          <div class="p-6 dark:text-white">
+            {% if teaser is not empty %}
+              <div{{ region_attributes.teaser|default(create_attribute()).addClass('bg-white p-4') }}>
+                {{ teaser }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          {{ button }}
         </div>
       {% endblock %}
     {% endembed %}

@@ -1,0 +1,8 @@
+uuid: 504fdfac-f7d4-42f9-a3e4-5ca79411a58b
+langcode: en
+status: true
+dependencies: {  }
+name: square_crop_220
+label: 'Square Crop 220'
+effects: {  }
+pipeline: __default__

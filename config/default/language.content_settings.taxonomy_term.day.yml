@@ -1,0 +1,11 @@
+uuid: a13659b2-a03e-4224-bee1-0c16562a59c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.day
+id: taxonomy_term.day
+target_entity_type_id: taxonomy_term
+target_bundle: day
+default_langcode: site_default
+language_alterable: false

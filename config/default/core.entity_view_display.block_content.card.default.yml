@@ -16,8 +16,7 @@ dependencies:
     - link
     - options
     - text
-  theme:
-    - wingsuit
+    - wingsuit_companion
 third_party_settings:
   layout_builder:
     enabled: true
@@ -88,10 +87,9 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: text_trimmed
+                type: text_default
                 label: hidden
-                settings:
-                  trim_length: 400
+                settings: {  }
                 third_party_settings: {  }
             weight: 0
             additional: {  }

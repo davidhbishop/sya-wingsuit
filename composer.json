@@ -74,7 +74,8 @@
         "drupal/media_bulk_upload": "^1.0@alpha",
         "drupal/section_library_reusable": "^1.0@beta",
         "drupal/svg_image_field": "^2.1",
-        "drupal/viewsreference": "^1.7"
+        "drupal/viewsreference": "^1.7",
+        "drupal/address": "~1.0"
     },
     "require-dev": {
         "drush/drush": ">=10",

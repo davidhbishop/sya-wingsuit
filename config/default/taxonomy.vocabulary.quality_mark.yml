@@ -1,0 +1,8 @@
+uuid: d86b7152-5f8e-4945-9e8a-c8ba77bbc8c9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Quality Mark'
+vid: quality_mark
+description: ''
+weight: 0

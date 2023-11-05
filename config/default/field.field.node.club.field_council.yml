@@ -1,0 +1,29 @@
+uuid: b1968860-f403-412b-9473-a203522a43a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_council
+    - node.type.club
+    - taxonomy.vocabulary.council
+id: node.club.field_council
+field_name: field_council
+entity_type: node
+bundle: club
+label: Council
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      council: council
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

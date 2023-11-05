@@ -1,0 +1,29 @@
+uuid: 038d0a2f-9d83-4df7-bdaa-c114c21e473f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliation
+    - node.type.club
+    - taxonomy.vocabulary.affiliation
+id: node.club.field_affiliation
+field_name: field_affiliation
+entity_type: node
+bundle: club
+label: Affiliation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      affiliation: affiliation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

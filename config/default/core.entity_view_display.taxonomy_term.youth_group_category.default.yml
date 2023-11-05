@@ -1,0 +1,31 @@
+uuid: e3fe8ce1-46c6-4880-b1d6-547b63f0217e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.youth_group_category.field_image
+    - taxonomy.vocabulary.youth_group_category
+  module:
+    - text
+id: taxonomy_term.youth_group_category.default
+targetEntityType: taxonomy_term
+bundle: youth_group_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 19f6508a-a20c-4fcd-b7e4-20c25115de0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.organisation
+id: node.organisation.field_category
+field_name: field_category
+entity_type: node
+bundle: organisation
+label: Category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

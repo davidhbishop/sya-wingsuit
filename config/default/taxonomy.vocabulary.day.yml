@@ -1,0 +1,8 @@
+uuid: b37c5408-8ab9-4d0e-ba7d-6072bc388f20
+langcode: en
+status: true
+dependencies: {  }
+name: Day
+vid: day
+description: ''
+weight: 0

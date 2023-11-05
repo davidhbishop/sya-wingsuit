@@ -1,0 +1,29 @@
+uuid: 26f67ea8-1cd6-4920-a26c-4b5a17e9c62d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - media.type.image
+    - taxonomy.vocabulary.youth_group_category
+id: taxonomy_term.youth_group_category.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: youth_group_category
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

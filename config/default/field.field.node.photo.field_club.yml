@@ -1,0 +1,29 @@
+uuid: a19e2d8c-9bd6-41c1-a95c-384bed1caf52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_club
+    - node.type.club
+    - node.type.photo
+id: node.photo.field_club
+field_name: field_club
+entity_type: node
+bundle: photo
+label: Club
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      club: club
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

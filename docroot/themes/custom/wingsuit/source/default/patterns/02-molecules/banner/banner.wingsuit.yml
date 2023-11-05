@@ -24,6 +24,13 @@ banner:
       label: Teaser
       description: Short optional teaser.
       preview: "<div class='prose'><h1>Lorem ipsum dolor sit.</h1></div>"
+    button:
+      type: pattern
+      label: Button
+      description: An optional button at the bottom of the card.
+      preview:
+        id: button
+        variant: default
   settings:
     height:
       type: select

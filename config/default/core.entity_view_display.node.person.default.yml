@@ -1,0 +1,202 @@
+uuid: 558906ac-dce6-498c-9af3-d332ee33c364
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.person.title
+    - field.field.node.person.body
+    - field.field.node.person.field_email
+    - field.field.node.person.field_image
+    - field.field.node.person.field_role
+    - node.type.person
+  module:
+    - layout_builder
+    - text
+    - user
+    - wingsuit_companion
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: pattern_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: 2_column
+            settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: 33x66
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
+              width: default
+              bg:
+                colorwidget: ''
+              bg_image: null
+              classes: ''
+              padding_x: default
+              padding_top: auto
+              padding_bottom: auto
+        components:
+          cd2081e8-bf79-485f-8fbf-947ffa2e7fd7:
+            uuid: cd2081e8-bf79-485f-8fbf-947ffa2e7fd7
+            region: column_2
+            configuration:
+              id: 'field_block:node:person:title'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          aa73e756-5307-4a6a-afd7-8f997da0b728:
+            uuid: aa73e756-5307-4a6a-afd7-8f997da0b728
+            region: column_2
+            configuration:
+              id: 'field_block:node:person:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          e1ab6fce-6dc9-4097-972d-bcae8ee05e55:
+            uuid: e1ab6fce-6dc9-4097-972d-bcae8ee05e55
+            region: column_2
+            configuration:
+              id: 'field_block:node:person:field_email'
+              label: Email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2abe53d8-8de9-4e18-ac0e-f7dac66dc7ff:
+            uuid: 2abe53d8-8de9-4e18-ac0e-f7dac66dc7ff
+            region: column_2
+            configuration:
+              id: 'field_block:node:person:field_role'
+              label: Role
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          9a6df5ce-9a34-484c-8bc2-f90fe9d6e649:
+            uuid: 9a6df5ce-9a34-484c-8bc2-f90fe9d6e649
+            region: null
+            configuration:
+              id: 'field_block:node:person:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          dcb13e3d-a064-4f5d-9ea3-9d832597abc4:
+            uuid: dcb13e3d-a064-4f5d-9ea3-9d832597abc4
+            region: column_1
+            configuration:
+              id: 'field_block:node:person:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: media_library
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: null
+  field_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: 6e8124c4-ede9-47d2-a95c-9a618df4b49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_days
+    - node.type.club
+    - taxonomy.vocabulary.day
+id: node.club.field_days
+field_name: field_days
+entity_type: node
+bundle: club
+label: Days
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      day: day
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

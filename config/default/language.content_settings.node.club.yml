@@ -1,0 +1,11 @@
+uuid: dcb2fb4a-2978-4dd1-91f0-6fe619898b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.club
+id: node.club
+target_entity_type_id: node
+target_bundle: club
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 3803bd06-cf3b-40fb-baa5-3f7a435187fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.council.field_image
+    - taxonomy.vocabulary.council
+  module:
+    - text
+id: taxonomy_term.council.default
+targetEntityType: taxonomy_term
+bundle: council
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: bd881421-3691-4911-9c20-7bc4cf879340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.club
+  module:
+    - layout_builder
+id: node.club.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: club
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

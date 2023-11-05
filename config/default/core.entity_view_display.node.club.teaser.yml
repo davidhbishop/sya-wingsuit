@@ -1,0 +1,119 @@
+uuid: af8047fb-4863-462b-8a77-0e758e1c0500
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.club.body
+    - field.field.node.club.field_affiliation
+    - field.field.node.club.field_council
+    - field.field.node.club.field_days
+    - field.field.node.club.field_email
+    - field.field.node.club.field_image
+    - field.field.node.club.field_location
+    - field.field.node.club.field_organisation
+    - field.field.node.club.field_quality_mark
+    - field.field.node.club.field_support_worker
+    - field.field.node.club.field_website
+    - field.field.node.club.layout_builder__layout
+    - field.field.node.club.layout_builder__translation
+    - node.type.club
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8f060128-cd46-4d23-96af-1af4ad121153:
+            uuid: 8f060128-cd46-4d23-96af-1af4ad121153
+            region: content
+            configuration:
+              id: 'field_block:node:club:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          edcfb61c-234d-40ae-b0eb-448d4b9c72ac:
+            uuid: edcfb61c-234d-40ae-b0eb-448d4b9c72ac
+            region: content
+            configuration:
+              id: 'field_block:node:club:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories: {  }
+id: node.club.teaser
+targetEntityType: node
+bundle: club
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_affiliation: true
+  field_council: true
+  field_days: true
+  field_email: true
+  field_location: true
+  field_organisation: true
+  field_quality_mark: true
+  field_support_worker: true
+  field_website: true
+  langcode: true
+  layout_builder__layout: true
+  layout_builder__translation: true
+  links: true

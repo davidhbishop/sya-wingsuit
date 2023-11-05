@@ -1,0 +1,29 @@
+uuid: 200e8eaa-d54a-47c1-ba88-52fc777667d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quality_mark
+    - node.type.club
+    - taxonomy.vocabulary.quality_mark
+id: node.club.field_quality_mark
+field_name: field_quality_mark
+entity_type: node
+bundle: club
+label: 'Quality Mark'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quality_mark: quality_mark
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

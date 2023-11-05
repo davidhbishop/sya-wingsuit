@@ -1,0 +1,8 @@
+uuid: 21f4758c-e1a9-4152-8274-ba4113e3dd7f
+langcode: en
+status: true
+dependencies: {  }
+name: Activity
+vid: activity
+description: 'A list of activities'
+weight: 0

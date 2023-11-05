@@ -1,0 +1,31 @@
+uuid: ec489aee-0eec-4340-ac8f-2eabfa7be546
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.quality_mark.field_image
+    - taxonomy.vocabulary.quality_mark
+  module:
+    - text
+id: taxonomy_term.quality_mark.default
+targetEntityType: taxonomy_term
+bundle: quality_mark
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

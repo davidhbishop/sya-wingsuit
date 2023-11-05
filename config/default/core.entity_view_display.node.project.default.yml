@@ -1,0 +1,147 @@
+uuid: 8554f941-0eb6-4720-8861-1d591e9caa00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - node.type.project
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - wingsuit_companion
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f22df6b5-840b-45db-82cc-21871d1a49dc:
+            uuid: f22df6b5-840b-45db-82cc-21871d1a49dc
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: pattern_section
+        layout_settings:
+          label: Hero
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: 1_column
+            settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: equal
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
+              width: default
+              bg:
+                colorwidget: ''
+              bg_image: null
+              classes: ''
+              padding_x: default
+              padding_top: auto
+              padding_bottom: auto
+        components:
+          f4b1aab5-427a-43bf-8741-7e62d5e65242:
+            uuid: f4b1aab5-427a-43bf-8741-7e62d5e65242
+            region: column_1
+            configuration:
+              id: 'field_block:node:project:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: pattern_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: 1_column
+            settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: equal
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
+              width: default
+              bg:
+                colorwidget: ''
+              bg_image: null
+              classes: ''
+              padding_x: default
+              padding_top: auto
+              padding_bottom: auto
+        components:
+          64a4aaf2-abf2-444b-846f-b6a43522cd31:
+            uuid: 64a4aaf2-abf2-444b-846f-b6a43522cd31
+            region: column_1
+            configuration:
+              id: 'field_block:node:project:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

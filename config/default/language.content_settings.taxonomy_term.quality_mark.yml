@@ -1,0 +1,11 @@
+uuid: ef0817c2-d711-4ec9-8c7a-eedad6687edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.quality_mark
+id: taxonomy_term.quality_mark
+target_entity_type_id: taxonomy_term
+target_bundle: quality_mark
+default_langcode: site_default
+language_alterable: false

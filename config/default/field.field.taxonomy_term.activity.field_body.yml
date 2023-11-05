@@ -1,0 +1,23 @@
+uuid: 3ae93204-c3c8-4a27-8784-9e951cbd2b5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_body
+    - taxonomy.vocabulary.activity
+  module:
+    - text
+id: taxonomy_term.activity.field_body
+field_name: field_body
+entity_type: taxonomy_term
+bundle: activity
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

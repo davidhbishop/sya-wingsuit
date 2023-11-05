@@ -1,0 +1,8 @@
+uuid: 8d4d2489-1f59-41c6-a87a-13b7609d1367
+langcode: en
+status: true
+dependencies: {  }
+name: 'Youth Group Category'
+vid: youth_group_category
+description: 'They type of youth group'
+weight: 0

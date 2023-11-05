@@ -1,0 +1,8 @@
+uuid: 3da70177-8c44-41f4-8947-b69e4432066e
+langcode: en
+status: true
+dependencies: {  }
+name: Role
+vid: role
+description: 'A persons role'
+weight: 0
