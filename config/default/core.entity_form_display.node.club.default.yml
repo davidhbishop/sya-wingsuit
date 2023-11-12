@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.club.field_location
     - field.field.node.club.field_organisation
     - field.field.node.club.field_quality_mark
+    - field.field.node.club.field_schedule
     - field.field.node.club.field_support_worker
     - field.field.node.club.field_website
     - field.field.node.club.layout_builder__layout
@@ -99,6 +100,14 @@ content:
     weight: 28
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_schedule:
+    type: text_textarea
+    weight: 35
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_support_worker:
     type: entity_reference_autocomplete

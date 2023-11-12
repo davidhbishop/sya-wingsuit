@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.location.body
     - field.field.node.location.field_address
+    - field.field.node.location.field_area
     - field.field.node.location.field_image
     - node.type.location
     - workflows.workflow.editorial
@@ -39,6 +40,16 @@ content:
     weight: 122
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_area:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_image:
     type: entity_reference_autocomplete

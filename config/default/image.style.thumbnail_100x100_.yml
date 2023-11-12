@@ -1,0 +1,8 @@
+uuid: e5d685f6-4790-46c5-b5ff-d439f1a1a286
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_100x100_
+label: 'Thumbnail (100x100)'
+effects: {  }
+pipeline: __default__

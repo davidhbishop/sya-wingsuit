@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.location.body
     - field.field.node.location.field_address
+    - field.field.node.location.field_area
     - field.field.node.location.field_image
     - node.type.location
   module:
@@ -34,6 +35,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_image:
     type: entity_reference_label

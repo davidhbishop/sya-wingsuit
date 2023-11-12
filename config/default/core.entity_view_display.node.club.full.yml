@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.view
     - core.entity_view_mode.node.full
     - field.field.node.club.body
     - field.field.node.club.field_affiliation
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.club.field_location
     - field.field.node.club.field_organisation
     - field.field.node.club.field_quality_mark
+    - field.field.node.club.field_schedule
     - field.field.node.club.field_support_worker
     - field.field.node.club.field_website
     - field.field.node.club.layout_builder__layout
@@ -29,25 +31,223 @@ third_party_settings:
     allow_custom: true
     sections:
       -
-        layout_id: pattern_section_slider
+        layout_id: pattern_section
         layout_settings:
-          label: 'Club banner'
+          label: ''
           context_mapping: {  }
           pattern:
             field_templates: default
-            variant: ''
+            variant: 2_column
             settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: equal
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
               width: default
               bg:
-                colorwidget: gray-light
+                colorwidget: ''
               bg_image: null
               classes: ''
               padding_x: default
               padding_top: auto
               padding_bottom: auto
-              slides_per_view: '1'
-              autoplay: 0
-        components: {  }
+        components:
+          033ffd30-8a2f-4d8a-87fb-4a5b93b70123:
+            uuid: 033ffd30-8a2f-4d8a-87fb-4a5b93b70123
+            region: column_1
+            configuration:
+              id: 'field_block:node:club:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          008c6198-d41b-458b-8a59-3d83b8cbc979:
+            uuid: 008c6198-d41b-458b-8a59-3d83b8cbc979
+            region: column_2
+            configuration:
+              id: 'field_block:node:club:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          18d5cae9-4263-40e0-b015-4fc279eda39f:
+            uuid: 18d5cae9-4263-40e0-b015-4fc279eda39f
+            region: column_1
+            configuration:
+              id: 'field_block:node:club:field_organisation'
+              label: Organisation
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: pattern_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: 3_column
+            settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: equal
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
+              width: default
+              bg:
+                colorwidget: ''
+              bg_image: null
+              classes: ''
+              padding_x: default
+              padding_top: auto
+              padding_bottom: auto
+        components:
+          8f48735d-a6d2-4307-ba97-aea004aabce5:
+            uuid: 8f48735d-a6d2-4307-ba97-aea004aabce5
+            region: column_1
+            configuration:
+              id: 'field_block:node:club:field_email'
+              label: Email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          4afe9a5b-eb45-4fdd-9a22-2327f8a9062c:
+            uuid: 4afe9a5b-eb45-4fdd-9a22-2327f8a9062c
+            region: column_3
+            configuration:
+              id: 'field_block:node:club:field_location'
+              label: Location
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: teaser
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          18dfd1de-065e-45bd-b703-0bbf04d54c14:
+            uuid: 18dfd1de-065e-45bd-b703-0bbf04d54c14
+            region: column_2
+            configuration:
+              id: 'field_block:node:club:field_schedule'
+              label: Schedule
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: pattern_section
+        layout_settings:
+          label: Photos
+          context_mapping: {  }
+          pattern:
+            field_templates: default
+            variant: 1_column
+            settings:
+              display_header_region: 0
+              columns_width_1: equal
+              columns_width_2: equal
+              columns_width_3: equal
+              columns_width_4: equal
+              columns_width_5: equal
+              equal_height: 0
+              gutter: default
+              columns: '1'
+              flip_mobile: 0
+              vertical_center: 0
+              width: default
+              bg:
+                colorwidget: ''
+              bg_image: null
+              classes: ''
+              padding_x: default
+              padding_top: auto
+              padding_bottom: auto
+        components:
+          ac1ed1ec-72fd-4545-a3e1-6ba8bc68d010:
+            uuid: ac1ed1ec-72fd-4545-a3e1-6ba8bc68d010
+            region: column_1
+            configuration:
+              id: 'inline_block:view'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 95
+              block_serialized: null
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -76,6 +276,7 @@ hidden:
   field_location: true
   field_organisation: true
   field_quality_mark: true
+  field_schedule: true
   field_support_worker: true
   field_website: true
   langcode: true

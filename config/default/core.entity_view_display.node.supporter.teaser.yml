@@ -1,21 +1,18 @@
-uuid: 5eace572-941d-458d-bbaa-d2080f7ffa31
+uuid: 5703e448-576f-48cc-aa0b-fb034e117717
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.project.body
-    - field.field.node.project.field_image
-    - field.field.node.project.field_logo
-    - field.field.node.project.field_organisation
-    - field.field.node.project.field_supporter
-    - node.type.project
+    - field.field.node.supporter.body
+    - field.field.node.supporter.field_logo
+    - node.type.supporter
   module:
     - text
     - user
-id: node.project.teaser
+id: node.supporter.teaser
 targetEntityType: node
-bundle: project
+bundle: supporter
 mode: teaser
 content:
   body:
@@ -32,8 +29,5 @@ content:
     weight: 100
     region: content
 hidden:
-  field_image: true
   field_logo: true
-  field_organisation: true
-  field_supporter: true
   langcode: true

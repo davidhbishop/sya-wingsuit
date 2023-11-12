@@ -1,0 +1,8 @@
+uuid: e3932268-93b3-4230-8e29-2f212a8a93c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Supporter Type'
+vid: supporter_type
+description: 'The type of supporter'
+weight: 0

@@ -1,0 +1,38 @@
+uuid: 322c521b-b032-43a1-9dda-38877601a2d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.supporter.body
+    - field.field.node.supporter.field_logo
+    - node.type.supporter
+  module:
+    - text
+    - user
+id: node.supporter.default
+targetEntityType: node
+bundle: supporter
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_logo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

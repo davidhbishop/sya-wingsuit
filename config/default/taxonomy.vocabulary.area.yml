@@ -1,0 +1,8 @@
+uuid: 1fd33daf-9729-4c85-bb88-9ec43498258e
+langcode: en
+status: true
+dependencies: {  }
+name: Area
+vid: area
+description: 'A geographical area'
+weight: 0

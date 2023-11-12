@@ -1,21 +1,18 @@
-uuid: d3a51225-e500-420a-9e0f-053bff2a5faf
+uuid: 1331d77f-b26b-4abd-9d1d-9b033ebbe267
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.project.body
-    - field.field.node.project.field_image
-    - field.field.node.project.field_logo
-    - field.field.node.project.field_organisation
-    - field.field.node.project.field_supporter
-    - node.type.project
+    - field.field.node.supporter.body
+    - field.field.node.supporter.field_logo
+    - node.type.supporter
   module:
     - content_moderation
     - path
     - text
-id: node.project.default
+id: node.supporter.default
 targetEntityType: node
-bundle: project
+bundle: supporter
 mode: default
 content:
   body:
@@ -34,39 +31,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: entity_reference_autocomplete
-    weight: 122
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_logo:
     type: entity_reference_autocomplete
-    weight: 124
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_organisation:
-    type: entity_reference_autocomplete
-    weight: 123
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_supporter:
-    type: entity_reference_autocomplete
-    weight: 125
+    weight: 122
     region: content
     settings:
       match_operator: CONTAINS

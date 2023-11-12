@@ -1,0 +1,32 @@
+uuid: 6debd319-2cb8-4909-b998-2510c978846e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: Default
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  7da9d38b-b204-4fbe-ba83-4d1992a259c5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7da9d38b-b204-4fbe-ba83-4d1992a259c5
+    context_mapping:
+      node: node
+    bundles:
+      session: session
+      article: article
+      club: club
+      landing_page: landing_page
+      location: location
+      organisation: organisation
+      page: page
+      person: person
+      photo: photo
+      project: project
+      supporter: supporter
+selection_logic: and
+weight: -8
+relationships: {  }
