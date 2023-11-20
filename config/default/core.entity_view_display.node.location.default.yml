@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.location.body
     - field.field.node.location.field_address
     - field.field.node.location.field_area
+    - field.field.node.location.field_geo_location
     - field.field.node.location.field_image
     - node.type.location
   module:
     - address
+    - geofield
     - text
     - user
 id: node.location.default
@@ -43,6 +45,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_geo_location:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_image:
     type: entity_reference_label

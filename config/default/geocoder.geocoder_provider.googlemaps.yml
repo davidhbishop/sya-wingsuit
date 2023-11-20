@@ -1,0 +1,13 @@
+uuid: 0c6810d8-8e89-421d-93b5-b1647016164c
+langcode: en
+status: true
+dependencies: {  }
+id: googlemaps
+label: GoogleMaps
+plugin: googlemaps
+configuration:
+  throttle:
+    period: null
+    limit: null
+  apiKey: sya-website-apikey-2023
+  region: ''

@@ -87,9 +87,9 @@ menu:
       fields:
         items:
           14:
-            title: Home
+            text: Home
             url: "#"
           15:
-            title: About
+            text: About
             url: "#"
   visibility: storybook

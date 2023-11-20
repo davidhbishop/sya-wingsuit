@@ -1,1 +1,4 @@
-toastify_cdn: 1
+toastify_loading: cdn
+save_behavior: stay
+hide_discard_button: true
+hide_revert_button: true

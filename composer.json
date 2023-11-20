@@ -75,7 +75,11 @@
         "drupal/section_library_reusable": "^1.0@beta",
         "drupal/svg_image_field": "^2.1",
         "drupal/viewsreference": "^1.7",
-        "drupal/address": "~1.0"
+        "drupal/address": "~1.0",
+        "drupal/geocoder": "^3.35",
+        "drupal/geofield": "^1.56",
+        "geocoder-php/google-maps-provider": "^4.7",
+        "drupal/geofield_map": "^3.0"
     },
     "require-dev": {
         "drush/drush": ">=10",

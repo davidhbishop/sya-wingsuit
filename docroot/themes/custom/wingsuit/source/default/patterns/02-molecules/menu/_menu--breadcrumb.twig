@@ -6,16 +6,18 @@
   'lg:flex lg:space-x-7 lg:items-center xl:space-x-11 2xl:space-x-15'
 ] | sort | join(' ') | trim ) %}
 
-<ul class="{{ list_classes }}">
-  {% for item in items %}
-    {% set link_classes = ([
-      'w-full block cursor-pointer lg:inline-block',
-    ] | sort | join(' ') | trim ) %}
-    <li>
-        <a href="{{ item.url }}" class="{{ link_classes }}">
-          {{ item.title }}
-        </a>
-    </li>
-  {% endfor %}
-</ul>
-
+<nav role="navigation" aria-labelledby="system-breadcrumb">
+  <ol class="{{ list_classes }}">
+    {% for item in items %}
+      {% set link_classes = ([
+        'w-full block cursor-pointer lg:inline-block',
+      ] | sort | join(' ') | trim ) %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}" class="{{ link_classes }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}      </li>
+    {% endfor %}
+  </ol>
+</nav>

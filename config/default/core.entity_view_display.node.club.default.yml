@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.club.body
     - field.field.node.club.field_affiliation
+    - field.field.node.club.field_category
     - field.field.node.club.field_council
     - field.field.node.club.field_days
     - field.field.node.club.field_email
@@ -15,7 +16,6 @@ dependencies:
     - field.field.node.club.field_schedule
     - field.field.node.club.field_support_worker
     - field.field.node.club.field_website
-    - field.field.node.club.layout_builder__layout
     - field.field.node.club.layout_builder__translation
     - node.type.club
   module:
@@ -48,6 +48,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
     region: content
   field_council:
     type: entity_reference_label
@@ -136,6 +144,5 @@ hidden:
   body: true
   content_moderation_control: true
   langcode: true
-  layout_builder__layout: true
   layout_builder__translation: true
   links: true

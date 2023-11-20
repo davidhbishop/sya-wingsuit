@@ -1,0 +1,10 @@
+uuid: 383d836c-27dc-4b77-81ea-20702bd5f5ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.google_map
+label: 'Google Map'
+targetEntityType: node
+cache: true
