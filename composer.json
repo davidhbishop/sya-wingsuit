@@ -79,7 +79,8 @@
         "drupal/geocoder": "^3.35",
         "drupal/geofield": "^1.56",
         "geocoder-php/google-maps-provider": "^4.7",
-        "drupal/geofield_map": "^3.0"
+        "drupal/geofield_map": "^3.0",
+        "drupal/upgrade_status": "^4.0"
     },
     "require-dev": {
         "drush/drush": ">=10",
